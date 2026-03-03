@@ -45,15 +45,15 @@ const faqs = [
   },
   {
     question: "Do you offer trial sessions?",
-    answer: "No trial sessions, but we offer a free assessment which needs to be booked separately."
+    answer: "No, we do not offer trial sessions. But we have a free assessment which needs to be booked separately"
   },
   {
     question: "What is your cancellation policy?",
-    answer: "24 hrs notice for cancellation of all training sessions, drop ins and court bookings"
+    answer: "We require a 24 hr notice for cancellation of all training sessions, drop-ins and court bookings."
   },
   {
     question: "Are there programs for children?",
-    answer: "Ages 5 and above; elite high performance training"
+    answer: "Yes, we have specialized junior development programs for ages 5 and above, ranging from introductory fun classes to elite high performance training."
   },
   {
     question: "Is the facility wheelchair accessible?",
