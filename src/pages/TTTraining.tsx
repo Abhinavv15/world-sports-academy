@@ -132,19 +132,16 @@ const TTTraining = () => {
       <Navbar />
       <main className="pb-16 -mt-16">
         {/* Full Frame Hero Section */}
-        <section className="relative w-full min-h-screen md:min-h-[115vh] overflow-hidden mb-16">
-          {/* Hero image — on mobile show right portion to reveal the girl + bat, on md+ center */}
+        <section className="relative w-full min-h-screen md:min-h-[115vh] overflow-hidden mb-8 md:mb-16">
+          {/* Hero image — show girl's face on all screens by centering on left portion of image */}
           <img
             src={ttHeroImg}
             alt="Table Tennis Training"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{
-              objectPosition: "right 20%",
-            }}
+            style={{ objectPosition: "20% 15%" }}
           />
-          {/* Stronger overlay on mobile so text is readable over the busier image */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/60 md:bg-black/40" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 md:p-8">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/45 to-black/70" />
+          <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 sm:justify-center sm:pb-0 p-4 md:p-8">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-800 text-white text-center mb-4 md:mb-6 drop-shadow-xl tracking-tight leading-tight">
               Table Tennis Training
             </h1>
@@ -233,68 +230,68 @@ const TTTraining = () => {
               <h2 className="text-4xl md:text-5xl font-heading font-800 text-foreground uppercase tracking-tight">Programs for Every Player</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[300px]">
               {/* Box 1 - Kids Training (Large) */}
-              <div className="md:col-span-8 relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
+              <div className="md:col-span-8 h-[260px] md:h-auto relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
                 <a href={programs[0].link} target={programs[0].link.startsWith('http') ? "_blank" : "_self"} rel="noreferrer" className="block w-full h-full">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500 z-10" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 z-10" />
                   <img src={programs[0].image} alt={programs[0].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <h3 className="text-3xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[0].title}</h3>
-                    <p className="text-white/80 font-medium uppercase text-sm tracking-wider">{programs[0].subtitle}</p>
+                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[0].title}</h3>
+                    <p className="text-white/80 font-medium uppercase text-xs md:text-sm tracking-wider">{programs[0].subtitle}</p>
                   </div>
                 </a>
               </div>
 
               {/* Box 2 - Open Play (Small Vertical) */}
-              <div className="md:col-span-4 relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
+              <div className="md:col-span-4 h-[220px] md:h-auto relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
                 <a href={programs[2].link} target={programs[2].link.startsWith('http') ? "_blank" : "_self"} rel="noreferrer" className="block w-full h-full">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500 z-10" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 z-10" />
                   <img src={programs[2].image} alt={programs[2].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <h3 className="text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[2].title}</h3>
-                    <p className="text-white/80 font-medium uppercase text-sm tracking-wider">{programs[2].subtitle}</p>
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[2].title}</h3>
+                    <p className="text-white/80 font-medium uppercase text-xs md:text-sm tracking-wider">{programs[2].subtitle}</p>
                   </div>
                 </a>
               </div>
 
               {/* Box 3 - Membership (Small) */}
-              <div className="md:col-span-4 relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
+              <div className="md:col-span-4 h-[220px] md:h-auto relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
                 <a href={programs[1].link} target={programs[1].link.startsWith('http') ? "_blank" : "_self"} rel="noreferrer" className="block w-full h-full">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500 z-10" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 z-10" />
                   <img src={programs[1].image} alt={programs[1].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <h3 className="text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[1].title}</h3>
-                    <p className="text-white/80 font-medium uppercase text-sm tracking-wider">{programs[1].subtitle}</p>
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[1].title}</h3>
+                    <p className="text-white/80 font-medium uppercase text-xs md:text-sm tracking-wider">{programs[1].subtitle}</p>
                   </div>
                 </a>
               </div>
 
               {/* Box 4 - Advanced Classes (Small) */}
-              <div className="md:col-span-4 relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
+              <div className="md:col-span-4 h-[220px] md:h-auto relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
                 <a href={programs[3].link} target={programs[3].link.startsWith('http') ? "_blank" : "_self"} rel="noreferrer" className="block w-full h-full">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500 z-10" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 z-10" />
                   <img src={programs[3].image} alt={programs[3].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <h3 className="text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[3].title}</h3>
-                    <p className="text-white/80 font-medium uppercase text-sm tracking-wider">{programs[3].subtitle}</p>
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[3].title}</h3>
+                    <p className="text-white/80 font-medium uppercase text-xs md:text-sm tracking-wider">{programs[3].subtitle}</p>
                   </div>
                 </a>
               </div>
 
               {/* Box 5 - League and Tournament (Small) */}
-              <div className="md:col-span-4 relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
+              <div className="md:col-span-4 h-[220px] md:h-auto relative group rounded-2xl overflow-hidden cursor-pointer shadow-lg">
                 <a href={programs[4].link} target={programs[4].link.startsWith('http') ? "_blank" : "_self"} rel="noreferrer" className="block w-full h-full">
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500 z-10" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 z-10" />
                   <img src={programs[4].image} alt={programs[4].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute bottom-0 left-0 p-6 z-20 w-full">
-                    <h3 className="text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[4].title}</h3>
-                    <p className="text-white/80 font-medium uppercase text-sm tracking-wider">{programs[4].subtitle}</p>
+                    <h3 className="text-xl md:text-2xl font-heading font-bold text-white uppercase tracking-tight mb-1 transition-colors">{programs[4].title}</h3>
+                    <p className="text-white/80 font-medium uppercase text-xs md:text-sm tracking-wider">{programs[4].subtitle}</p>
                   </div>
                 </a>
               </div>
@@ -607,38 +604,38 @@ const TTTraining = () => {
               </div>
 
               {/* Right Column (Image with Floating Boxes) */}
-              <div className="relative pl-0 lg:pl-10 mt-10 lg:mt-0">
+              <div className="relative pl-0 lg:pl-10 mt-10 lg:mt-0 pb-24 sm:pb-32 lg:pb-10">
                 <div className="relative rounded-[2rem] overflow-hidden aspect-square lg:aspect-[4/5]">
                   <img src={missionImg} alt="Table Tennis Training" className="w-full h-full object-cover" />
                 </div>
 
-                {/* Floating Boxes */}
-                <div className="absolute -bottom-8 -left-2 sm:-left-6 flex gap-3 sm:gap-4 pr-4">
+                {/* Floating Boxes — inline on mobile, absolute-bottom on lg */}
+                <div className="flex gap-3 mt-4 lg:absolute lg:-bottom-8 lg:-left-2 xl:-left-6 lg:mt-0 lg:pr-4 overflow-x-auto pb-2">
 
                   {/* Coaches Box */}
-                  <div className="bg-sport-green text-white p-5 sm:p-8 rounded-2xl shadow-xl w-[140px] sm:w-[190px] flex flex-col justify-between aspect-square">
-                    <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/90">Coaches</p>
+                  <div className="bg-sport-green text-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl min-w-[110px] sm:w-[150px] lg:w-[190px] flex flex-col justify-between aspect-square flex-shrink-0">
+                    <p className="text-xs font-semibold tracking-wider uppercase text-white/90">Coaches</p>
                     <div className="mt-auto">
-                      <h4 className="text-4xl sm:text-6xl font-heading font-900 mb-1">5+</h4>
-                      <p className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-white/80">Professional Trainers</p>
+                      <h4 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-900 mb-1">5+</h4>
+                      <p className="text-[10px] font-bold tracking-wider uppercase text-white/80">Professional Trainers</p>
                     </div>
                   </div>
 
                   {/* Locations Box */}
-                  <div className="bg-sport-blue text-white p-5 sm:p-8 rounded-2xl shadow-xl w-[140px] sm:w-[190px] flex flex-col justify-between aspect-square">
-                    <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/90">Locations</p>
+                  <div className="bg-sport-blue text-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl min-w-[110px] sm:w-[150px] lg:w-[190px] flex flex-col justify-between aspect-square flex-shrink-0">
+                    <p className="text-xs font-semibold tracking-wider uppercase text-white/90">Locations</p>
                     <div className="mt-auto">
-                      <h4 className="text-4xl sm:text-6xl font-heading font-900 mb-1">2</h4>
-                      <p className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-white/80">Active Centers</p>
+                      <h4 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-900 mb-1">2</h4>
+                      <p className="text-[10px] font-bold tracking-wider uppercase text-white/80">Active Centers</p>
                     </div>
                   </div>
 
                   {/* Students Box */}
-                  <div className="bg-sport-purple text-white p-5 sm:p-8 rounded-2xl shadow-xl w-[140px] sm:w-[190px] flex flex-col justify-between aspect-square">
-                    <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/90">Community</p>
+                  <div className="bg-sport-purple text-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl min-w-[110px] sm:w-[150px] lg:w-[190px] flex flex-col justify-between aspect-square flex-shrink-0">
+                    <p className="text-xs font-semibold tracking-wider uppercase text-white/90">Community</p>
                     <div className="mt-auto">
-                      <h4 className="text-4xl sm:text-6xl font-heading font-900 mb-1">500+</h4>
-                      <p className="text-[10px] sm:text-xs font-bold tracking-wider uppercase text-white/80">Students Trained</p>
+                      <h4 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-900 mb-1">500+</h4>
+                      <p className="text-[10px] font-bold tracking-wider uppercase text-white/80">Students Trained</p>
                     </div>
                   </div>
 
