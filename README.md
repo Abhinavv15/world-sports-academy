@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# World Sports Academy
 
-## Project info
+Welcome to the World Sports Academy repository! This is the frontend application for Youth Sport Stride, providing information, assessments, and bookings for various sports disciplines like Squash and Table Tennis.
 
-**URL**: https://lovable.dev/projects/51f0bd47-f1fe-43e5-a773-2e8ce22b39dd
+**Live Website:** [https://worldsportsacademy1212.netlify.app/](https://worldsportsacademy1212.netlify.app/)
 
-## How can I edit this code?
+## Features
+- Dynamic and responsive UI across all devices.
+- Program listings ranging from beginner to advanced.
+- Smooth navigation for viewing schedules, booking sessions, and exploring training options.
+- Modern aesthetics using Tailwind CSS and shadcn-ui components.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+This project is built using a modern frontend stack:
+- **[React](https://reactjs.org/)**
+- **[Vite](https://vitejs.dev/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Tailwind CSS](https://tailwindcss.com/)**
+- **[shadcn-ui](https://ui.shadcn.com/)**
+- **[React Router](https://reactrouter.com/)**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Local Development
 
-Changes made via Lovable will be committed automatically to this repo.
+If you want to work locally, simply clone this repository and install the dependencies. The main requirement is having [Node.js](https://nodejs.org/) & npm installed.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### 1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+cd youth-sport-stride
 ```
 
-**Edit a file directly in GitHub**
+### 2. Install dependencies
+```sh
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3. Start the development server
+```sh
+npm run dev
+```
+This will start a local server with auto-reloading and an instant preview.
 
-**Use GitHub Codespaces**
+## Build and Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+To build the application for production, you can run:
+```sh
+npm run build
+```
+This generates an optimized build in the `dist` folder that you can deploy to any static hosting provider.
