@@ -196,7 +196,8 @@ const TTTraining = () => {
             <p className="text-base sm:text-lg md:text-xl text-white/90 text-center max-w-xs sm:max-w-lg md:max-w-2xl mb-8 md:mb-10 drop-shadow-md font-medium leading-relaxed px-2">
               Join Canada's premier sports academy. Whether you're a beginner learning the basics or a pro refining your game, we have the expert coaching and world-class facilities for you.
             </p>
-            <Button size="lg" className="bg-sport-green text-white hover:bg-sport-green/90 text-base md:text-lg px-6 md:px-8 py-5 md:py-8 rounded-full font-bold shadow-2xl transform transition-transform hover:scale-105">
+            <Button size="lg" className="bg-sport-green text-white hover:bg-sport-green/90 text-base md:text-lg px-6 md:px-8 py-5 md:py-8 rounded-full font-bold shadow-2xl transform transition-transform hover:scale-105"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Take a free Assessment
             </Button>
 

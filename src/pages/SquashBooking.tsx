@@ -218,7 +218,7 @@ const SquashBooking = () => {
 
         {/* About Us Section (Forging Champions) */}
         <section id="about" className="py-16 md:py-28 w-full relative overflow-hidden scroll-mt-24 mb-12 md:mb-24">
-          <img src={sq16} alt="Squash Training Background" className="absolute inset-0 w-full h-full object-cover object-top" />
+          <img src={sq16} alt="Squash Training Background" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 40%' }} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80" />
 
           <div className="container mx-auto px-4 max-w-6xl relative z-10">
